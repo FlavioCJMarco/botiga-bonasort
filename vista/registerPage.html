@@ -1,0 +1,83 @@
+
+
+<section class="cuadrados" style="z-index: -10">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</section>
+
+<div id="loginBox" class="center">
+    <a href="../index.php"> <img src="../imatges/logo_sinfondo.png" | height="150px" width="150px"/> </a>
+    <h1> Crear cuenta </h1>
+    <form action="../controlador/controlador_authRegister.php" method="POST" enctype="multipart/form-data" onSubmit="return validarConfirmacion(this)">
+        Foto de Perfil
+        <div id="userProfilePic">
+            <input type="file" name="foto"/>
+        </div>
+        <br />
+        Nombre
+        <br />
+        <input type="text" placeholder="i.e Montserrat" class="dataBoxR" name="nombre" pattern="^[a-zA-Z\s]+" title="Los caracteres especiales no están permitidos" required/>
+        <br />     <br />
+        Apellido 1
+        <br />
+        <input type="text" placeholder="i.e Costa" class="dataBoxR" name="apellido1" pattern="[a-zA-Z]+" title="Los caracteres especiales no están permitidos" required/>
+        <br />     <br />
+        Apellido 2
+        <br />
+        <input type="text" placeholder="i.e Milà" class="dataBoxR" name="apellido2" pattern="[a-zA-Z]+"  required/>
+        <br />     <br />
+        Correo Electrónico
+        <br />
+        <input type="email" placeholder="ejemplo@dominio.com" class="dataBoxR" name="email" required/> <!--pattern=".+@+[a-zA-Z]+.[a-zA-Z]"-->
+        <br />     <br />
+        Dirección
+        <br />
+        <input type="text" placeholder="C/ Bonasort 35" class="dataBoxR" name="adreca" maxlength="30" required/>
+        <br />     </br>
+        Población
+        <br />
+        <input type="text" placeholder="Barcelona" class="dataBoxR" name="poblacio" maxlength="30" required/>
+        <br />     </br>
+        Código Postal
+        <br />
+        <input type="text" placeholder="08290" class="dataBoxR" name="codiPostal" pattern="[0-9]{5}" required/>
+        <br /> <br />
+        <br /> <br />
+        <hr />
+        <br /> <br />
+        Usuario
+        <br />
+        <input type="type" placeholder="username" class="dataBoxR" name="username" pattern="[a-zA-Z0-9]+" required/>
+        <br />     <br />
+        Contraseña
+        <br />
+        <input type="password" class="dataBoxR" name="password" pattern="[a-zA-Z0-9]+" required/>
+        <br />     <br />
+        Por favor, confirme su contraseña
+        <br />
+        <input type="password" class="dataBoxR" name="password2" pattern="[a-zA-Z0-9]+" required/>
+        <br />     <br />
+
+        <input type="submit" id="submit" value="Crear cuenta" name="submitRegister" class="boton1"/>
+        <br />     <br />
+        ¿Ya tienes una cuenta? <a href="../index.php?accio=login" > Entra! </a>
+    </form>
+</div>

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "La Botiga de Bonasort 35"
+AuthUserFile /home/TDIW/tidw-d1/public_html/.htpasswd
+Require valid-user

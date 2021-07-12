@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Botiga Bonasort"
+AuthUserFile /home/TDIW/tdiw-d1/public_html/.htpasswd
+Require valid-user

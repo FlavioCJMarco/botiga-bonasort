@@ -1,0 +1,1179 @@
+
+/*============================================================================      MAIN PAGE      ======================================================================================*/
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #303030;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: black;
+}
+
+#body{
+    /*background-color: #303030;*/
+    background-color: #fbfbfb;
+    width: auto;
+    height: auto;
+}
+
+#logo{
+    margin-left: 50%;
+    width: 520px;
+}
+
+#logo:hover{
+    opacity: 0.8;
+    transition: ease-in-out 500ms;
+}
+
+#topBar{
+    background-color: #608B46;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#topBar div{
+    background-color: #608B46;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Verdana";
+}
+
+#subHeader{
+    background-color: #f6fff1;
+    font-family: "Verdana";
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#subheader div{
+
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    color: #303030;
+    font-family: "Verdana";
+}
+
+/* Aquesta classe es pot utilitzar per a totes les paraules qeu linkegen a alguna pagina */
+.link {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-family: "Verdana";
+    text-decoration: none;
+}
+
+.buscador{
+    margin-left: 10%;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    font-family: "Verdana";
+}
+
+.buscador input#search{
+    width: 250px;
+    height: 30px;
+    background: #ecf9e4;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: black;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.buscador .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 5px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.buscador input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    transition: 0.5s;
+    background-color: white;
+}
+
+#brandBar {
+    background-color: white;
+    padding: 5px;
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-areas: 'AllCategories marca1 marca2 marca3 marca4 marca5 marca6 marca7 marca8';
+}
+
+#brandBar div{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+#mejoresVentas{
+    font-family: "Verdana";
+}
+
+#footerContents{
+    backround-color: #FFFFFF;
+    font-family: "Verdana";
+    height: auto;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+footer div ul li a { color: whitesmoke; }
+footer div ul li { list-style-type: none; }
+footer {font-family: "Verdana"; color: #303030; background-color: #608B46;}
+
+/* ========================================================== GRID PAGINA PRINCIPAL =========================================== */
+
+#gridPagPrincipal {
+    /*background-color: #f2f2f2;*/
+    background-color: white;
+    padding: 5px;
+    display: grid;
+    text-align: center;
+
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-areas:
+            'img1 img2 img3'
+            'img4 img5 img6';
+}
+
+#gridPagPrincipal div:hover {
+    background-color: #c4c4c4;
+}
+
+.titolsPagines{
+    background-color: #e5ffdf;
+    color: #efca25;
+    font-size: 70px;
+    text-align: center;
+    font-family: "Freehand 575";
+}
+
+.img_grid{
+    heigth: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px)
+{
+    #imgMejoresVentas, #brandBar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.flex-gridPagPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: "Verdana";
+}
+
+.liMenu {
+    list-style-type: none;
+}
+
+
+/* ========================================================== QUI SOM =========================================== */
+.about {
+
+
+
+    display: flex;
+}
+.about div {
+    width: 50%;
+    flex-grow: 1;
+    text-align: left;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+}
+.about div + .about div{
+    margin-left: 2%;
+}
+
+/*========================================================================================================================================================================================*/
+/*============================================================================      LOGIN PAGE      ======================================================================================*/
+
+#loginBackground{
+    height: auto;
+    width: auto;
+}
+
+.changeBackgroundColor {
+    animation-name: changeBack;
+    animation: changeBack 10s infinite;
+}
+
+@keyframes changeBack {
+    0% {background-color: #ecffe2;}
+    50%{background-color: #e8f4d2;}
+    100% {background-color: #f2ffeb;}
+}
+
+
+#loginBox {
+    margin-top: 5%;
+    border-collapse: collapse;
+    border: 0.1px solid transparent;
+    border-radius: 1px;
+    background-color: #d7f4b9;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    padding: 50px 50px;
+    font-family: "Verdana";
+    z-index: 100;
+    opacity: 0.7;
+}
+
+.dataBox{
+    background-color: lightgray;
+    height: 50px;
+    width: 200px;
+    font-size: large;
+    text-align: center;
+    font-family: "Verdana";
+    border-radius: 5px;
+}
+
+.dataBox:hover{
+    background-color: white;
+    transition: all 500ms;
+}
+
+.boton1{
+    font-family: "Microsoft JhengHei UI";
+    font-size: medium;
+    background-color: #e5ffdf;
+    border: 0.5px solid transparent;
+    height:30px;
+    border-radius: 5px;
+}
+
+.boton1:hover{
+    cursor: pointer;
+    background-color: #ecf6e7;
+    transition: ease-in-out 500ms;
+}
+
+
+/*===================================== FONS ==================================================*/
+.cuadrados {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.cuadrados li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(153, 255, 153, 0.8);
+    bottom: 0px;
+    -webkit-animation: square 25s infinite linear;
+    -moz-animation: square 25s infinite linear;
+    animation: square 25s infinite linear;
+}
+
+.cuadrados li:nth-child(1) {
+    left: 10%;
+}
+.cuadrados li:nth-child(2) {
+    left: 20%;
+    width: 80px;
+    height: 80px;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 17s;
+    -moz-animation-duration: 17s;
+    animation-duration: 17s;
+}
+.cuadrados li:nth-child(3) {
+    left: 25%;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.cuadrados li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation-duration: 22s;
+    -moz-animation-duration: 22s;
+    animation-duration: 22s;
+    background-color: rgba(153, 255, 153, 0.7); /*Aquesta funció defineix colors amb el model rgba, red, green, blue, alpha (opacitat).*/
+}
+.cuadrados li:nth-child(5) {
+    left: 70%;
+}
+.cuadrados li:nth-child(6) {
+    left: 80%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+    background-color: rgba(153, 255, 153, 0.5);
+}
+.cuadrados li:nth-child(7) {
+    left: 32%;
+    width: 160px;
+    height: 160px;
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    animation-delay: 7s;
+    background-color: rgba(255,255,255, 0.9);
+}
+.cuadrados li:nth-child(8) {
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 40s;
+    -moz-animation-duration: 40s;
+    animation-duration: 40s;
+}
+.cuadrados li:nth-child(9) {
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 40s;
+    -moz-animation-duration: 40s;
+    animation-duration: 40s;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.cuadrados li:nth-child(10) {
+    left: 70%;
+    width: 160px;
+    height: 160px;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    animation-delay: 11s;
+}
+.cuadrados li:nth-child(11) {
+    left: 15%;
+    width: 17px;
+    height: 17px;
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    animation-delay: 12s;
+    -webkit-animation-duration: 40s;
+    -moz-animation-duration: 40s;
+    animation-duration: 40s;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.cuadrados li:nth-child(12) {
+    left: 20%;
+    width: 5px;
+    height: 5px;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 15s;
+    -moz-animation-duration: 15s;
+    animation-duration: 15s;
+    background-color: rgba(153, 255, 153, 0.4);
+}
+.cuadrados li:nth-child(13) {
+    left: 45%;
+    width: 8px;
+    height: 8px;
+    -webkit-animation-delay: 17s;
+    -moz-animation-delay: 17s;
+    animation-delay: 17s;
+    -webkit-animation-duration: 29s;
+    -moz-animation-duration: 29s;
+    animation-duration: 29s;
+    background-color: rgba(153, 255, 153, 0.6);
+}
+.cuadrados li:nth-child(14) {
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    animation-delay: 11s;
+    -webkit-animation-duration: 19s;
+    -moz-animation-duration: 19s;
+    animation-duration: 19s;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.cuadrados li:nth-child(15) {
+    left: 67%;
+    width: 50px;
+    height: 50px;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-duration: 12s;
+    -moz-animation-duration: 12s;
+    animation-duration: 12s;
+    background-color: rgba(153, 255, 153, 0.9);
+}
+.cuadrados li:nth-child(16) {
+    left: 75%;
+    width: 20px;
+    height: 20px;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 25s;
+    -moz-animation-duration: 25s;
+    animation-duration: 25s;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.cuadrados li:nth-child(17) {
+    left: 10%;
+    width: 10px;
+    height: 10px;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    animation-duration: 20s;
+    background-color: rgba(153, 255, 153, 0.6);
+}
+.cuadrados li:nth-child(18) {
+    left: 55%;
+    width: 10px;
+    height: 10px;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 32s;
+    -moz-animation-duration: 32s;
+    animation-duration: 32s;
+    background-color: rgba(153, 255, 153, 0.8);
+}
+.cuadrados li:nth-child(19) {
+    left: 59%;
+    width: 10px;
+    height: 10px;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-duration: 15s;
+    -moz-animation-duration: 15s;
+    animation-duration: 15s;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.cuadrados li:nth-child(20) {
+    left: 5%;
+    width: 15px;
+    height: 15px;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation-duration: 10s;
+    background-color: rgba(153, 255, 153, 0.4);
+}
+
+/*======================================================= CODIS DE LES ANIMACIONS ====================================================*/
+
+@-webkit-keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-100%) rotate(600deg);
+        transform: translateY(-100%) rotate(600deg);
+    }
+}
+@-moz-keyframes square {
+    0% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -moz-transform: translateY(-100%) rotate(600deg);
+        transform: translateY(-100%) rotate(600deg);
+    }
+}
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-1500px) rotate(600deg);
+        transform: translateY(-1500px) rotate(600deg);
+    }
+}
+
+/*================================================== PAGINA CARRO =======================================================*/
+
+#body_carro{
+    background-color: #303030;
+    width: auto;
+    height: auto;
+}
+
+
+.container_carro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-right: 80px;
+}
+
+.item_carro{
+    background: tomato;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.item_carro:hover{
+    background: coral;
+}
+
+.sidesection {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    right: 0px;
+    top: 0;
+    background-color: #1D1D1D;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 60px;
+    color: white;
+    font-family: Verdana;
+}
+
+#boton_pago{
+    position: relative;
+    padding: 10px;
+    top: 50px;
+    left: 300px;
+    border: 1px white solid;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+}
+
+#boton_pago:hover{
+   background-color: white;
+    transition: ease-in-out 500ms;
+}
+
+#vista_previa{
+    background-color: white;
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 12.5%;
+    padding-bottom: 30%;
+    width: 30%;
+    z-index: 1;
+    overflow-x: hidden;
+    font-family: Verdana;
+}
+
+.previa{
+    width: 90%;
+    height: 90%;
+    display: block;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 50px;
+    color: white;
+    background-color: tomato;
+
+}
+
+/*============================================================================      MENU MARQUES      ======================================================================================*/
+
+
+.BarMenuFont {
+    font-family: "Verdana";
+    font-size: 15px;
+
+
+}
+
+.BarMenuFont:hover{
+    border-bottom: 2px solid black;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transition: ease-in 20ms;
+}
+
+/*========================================================================= REGISTRO ==========================================================================================================*/
+
+.dataBoxR{
+    background-color: lightgray;
+    height: 27px;
+    width: 400px;
+    font-size: large;
+    text-align: center;
+    font-family: "Verdana";
+    border-radius: 5px;
+}
+
+.dataBoxR:hover{
+    background-color: white;
+    transition: all 500ms;
+}
+
+/*========================================== HAMBURGUESA mainPage.html ===============================*/
+
+/* CREATOR'S LINK (credits): https://codepen.io/erikterwan/pen/EVzeRP?editors=0100#0 */
+
+#botoMenu
+{
+    display: block;
+    position: relative;
+}
+
+#botoMenu input
+{
+    display: block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    /*top: -7px;
+    left: -5px;*/
+    cursor: pointer;
+    opacity: 0; /* amaguem icono de la 'X' */
+    z-index: 2; /* en clickar el situem a sobre de la hamburguesa */
+}
+
+/* Logo hamburguesa */
+
+#botoMenu span
+{
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #303030;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#botoMenu span:first-child
+{
+    transform-origin: 0% 0%;
+}
+
+#botoMenu span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
+
+/* Transform all the slices of hamburgers into a crossmark. */
+#botoMenu input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#botoMenu input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#botoMenu input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Make this absolute positioned at the top left of the screen */
+#menuBurguerMainPage
+{
+    position: absolute;
+    width: 300px;
+    margin: 0 0 0 -50px;
+    <!--margin: 10px 0 0 -50px;-->
+    padding: 50px;
+    background-color: none;
+    color: whitesmoke;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menuBurguerMainPage li
+{
+    border-radius: 1px;
+    background-color: whitesmoke;
+    margin-bottom: 2px;
+    padding: 10px 0;
+    border: none;
+}
+
+
+/* Desplaçament esquerra */
+#botoMenu input:checked ~ ul
+{
+    transform: none;
+}
+
+
+/*HOVER PER ALS BOTONS DEL DESPLEGABLE*/
+
+#botoDesplegable{
+    color: #303030;
+    font-size: 15px;
+    text-align: left;
+    font-family: "Verdana";
+}
+
+#botoDesplegable:hover{
+    font-size: 17px;
+    background-color: #c4c4c4;
+    transition: all 200ms;
+}
+
+
+/* ====================================================================== SLIDES ========================================================================== */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+#underBanner{
+    margin-top: 0px;
+    width: 975px;
+    height: 75px;
+    z-index: 300;
+    border-radius: 1.5px;
+}
+
+/* ==================================================================== VENTES PRODUCTES ==================================================================*/
+
+.container_flex{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item_flex{
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 5%;
+    padding: 2%;
+    position: relative;
+    color: black;
+    font-family: Verdana;
+    font-size: x-large;
+    vertical-align:middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 2px;
+    border: 2px outset black;
+    flex-shrink: unset;
+}
+
+.image_overlay {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gainsboro;
+}
+
+.item_flex:hover .overlay {
+    opacity: 0.6;
+}
+
+.text_descripcio {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .container_flex{
+        flex-direction: column;
+    }
+}
+
+/*=========================================DETALL PRODUCTES=============================================== */
+
+.detall_producte {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.detall_producte img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.barra_url {
+    background-color: #B1C23E;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: Verdana;
+    text-indent: 20%;
+}
+
+#PAGINA_MODIFICADA{
+    height: auto;
+}
+
+.boton2{
+    background-color: #E1C12E;
+    font-family: "Verdana";
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.boton2:hover{
+    color: #c4c4c4;
+    background-color: #303030;
+}
+
+/* ======================================================   MI CUENTA ================================================= */
+
+#userProfilePic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#userProfilePic img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#detallUsuariPage div {
+    text-align: center;
+
+}
+#detallUsuariPage div form div ul li{
+    list-style-type: none;
+    padding-top: 15px;
+    font-family: "Microsoft JhengHei Light";
+}
+
+.dataBoxCP{
+    background-color: #ecf6e7;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+    width: 250px;
+    font-size: medium;
+    text-align: left;
+    font-family: "Microsoft JhengHei UI";
+    border-radius: 3px;
+    border: none;
+}
+
+.dataBoxCP:hover{
+    background: none;
+    transition: all 500ms;
+}
+
+/* ==================================================== MI CARRO PAGE ================================================= */
+
+#flexContainer_MiCarro{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_MiCarro{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+#bloc_augmentarUnitats{
+    list-style-type: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bloc_augmentarUnitats button{
+    background-color: #a1e191;
+    font-family: "Verdana";
+    color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+#bloc_augmentarUnitats button:hover {
+    color: #ffffff;
+    background-color: #303030;
+}
+
+.grid_imatge_producteMiCarro{
+    align-content: center;
+    width: 500px;
+    heigth: 400px;
+    /*position: absolute;*/
+}
+
+.grid_caracteristiques_producteMiCarro{
+    font-family: "Verdana";
+    position: relative;
+    margin-left: 0;
+    width: 1000px;
+}
+
+.grid_caracteristiques_producteMiCarro ul{
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+}
+
+.grid_caracteristiques_producteMiCarro h4, h5{
+    display: inline;
+}
+
+.grid_imatge_producteMiCarro img{
+    heigth: 300px;
+    width: 300px;
+}
+
+#totalMiCarro{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+    text-align: center;
+    font-family: "Verdana";
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 15%;
+}
+
+#vaciarCarro{
+    background-color: gray;
+    font-family: "Verdana";
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#vaciarCarro:hover{
+    color: white;
+    background-color: darkred;
+}
+
+#eliminarProducto{
+    right: 5%;
+}
+
+#eliminarProducto button{
+    background-color: gray;
+    font-family: "Verdana";
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+}
+
+#eliminarProducto button:hover{
+    color: white;
+    background-color: darkred;
+}
+/* ===============================================   SIDEBAR   ======================================================== */
+
+.sidebar{
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #608B46;
+}
+
+.sidebar div{
+    text-align: center;
+    padding-top: 70%;
+}
+
+.sidebar div[data-count]:after{
+    text-align: center;
+    right: 3px;
+    position:absolute;
+    content: attr(data-count);
+    padding:1em;
+    border-radius:999px;
+    line-height:.1em;
+    min-width:.1em;
+    color: #303030;
+    text-align:center;
+    font-weight:bold;
+    font-family: "Verdana";
+    font-size: xx-small;
+    background: lightgray;
+    border: 1px solid black;
+}
+
+/* Logo del carrito a la capçalera */
+
+#carrito{
+    display: inline;
+}
+
+#carrito[data-count]{
+    position: relative;
+    left: -5px;
+    bottom: -10px;
+}
+
+#carrito[data-count]:after{
+    position: absolute;
+    content: attr(data-count);
+    padding:1em;
+    border-radius:999px;
+    line-height:.2em;
+    min-width:.1em;
+    color: #303030;
+    text-align:center;
+    font-weight:bold;
+    font-family: "Verdana";
+    font-size: xx-small;
+    background: #ecf6e7;
+    z-index: 2;
+}
